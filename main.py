@@ -22,7 +22,7 @@ os.makedirs(CACHE_DIR, exist_ok=True)
 
 CLIENT_ID = os.environ.get("SPOTIFY_CLIENT_ID", "d68f3bd56ef246aeac276470eb8926b5")
 CLIENT_SECRET = os.environ.get("SPOTIFY_CLIENT_SECRET", "569174440ac1449cb546a573d8a6310c")
-REDIRECT_URI = os.environ.get("SPOTIFY_REDIRECT_URI", "http://127.0.0.1:5000/callback")
+REDIRECT_URI = os.environ.get("SPOTIFY_REDIRECT_URI", "http://127.0.0.1:5001/callback")
 SCOPE = 'user-top-read user-read-email'
 
 # Processing status tracking
@@ -595,7 +595,7 @@ def health():
     return "OK", 200
 
 if __name__ == '__main__':
-    print("🚀 Run: http://localhost:5000")
+    print("🚀 Run: http://localhost:5001")
     print(f"🔧 Using {MAX_WORKERS} parallel workers for audio processing")
     print(f"💾 Cache directory: {CACHE_DIR}")
-    app.run(host="0.0.0.0", port=5000, threaded=True)
+    app.run(host="0.0.0.0", port=5001, threaded=True)
