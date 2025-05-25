@@ -22,7 +22,7 @@ os.makedirs(CACHE_DIR, exist_ok=True)
 
 CLIENT_ID = os.environ.get("SPOTIFY_CLIENT_ID", "d68f3bd56ef246aeac276470eb8926b5")
 CLIENT_SECRET = os.environ.get("SPOTIFY_CLIENT_SECRET", "569174440ac1449cb546a573d8a6310c")
-REDIRECT_URI = os.environ.get("SPOTIFY_REDIRECT_URI", "http://127.0.0.1:5001/callback")
+REDIRECT_URI = os.environ.get("SPOTIFY_REDIRECT_URI", "https://algorithm-test-itip-project16.apps.okd.ucll.cloud/callback")
 SCOPE = 'user-top-read user-read-email'
 
 # Processing status tracking

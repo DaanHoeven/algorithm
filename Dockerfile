@@ -16,7 +16,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose the port the Flask app will run on
-EXPOSE 5000
+EXPOSE 5001
 
 ENV NUMBA_CACHE_DIR=/tmp/numba_cache
 
